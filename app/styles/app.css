@@ -12,8 +12,14 @@ body{
     background: #f3f3f3;
 }
 
-.navbar .container-fluid {
-    
+.navbar .collapse {
+    justify-content: flex-end;
+}
+
+.navbar .nav-link:nth-child(3) {
+    background-color: rgb(117, 216, 104);
+    color: white;
+    border-radius: 5px;
 }
 /* ...snip... */
 
