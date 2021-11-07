@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Space+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto','Inter', 'Space Mono', monospace, sans-serif;
+    line-height: 1.5;
+    background: #f3f3f3;
+}
+
+.navbar .container-fluid {
+    
+}
+/* ...snip... */
+
+.food {
+    background: url(/assets/images/undraw_cooking_lyxy.png);
+    /* ...snip... */
+}
