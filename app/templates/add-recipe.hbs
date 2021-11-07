@@ -1,1 +1,39 @@
 <NavBar />
+
+<div id= "addRecipe">
+    <form id="recipeForm">
+            <div id="inputsContainer">
+                <label>Please enter the name of the recipe: </label> <br/> 
+                <input type="text" class="textbox-wdith" id="title" name="title" placeholder="Recipe Title" required/>
+                
+                <label>Please enter the total time needed to complete this recipe in hours and minutes: </label> <br/> 
+                <input type="text" class="textbox-wdith" id="time" name="time" placeholder="Cook Time (HH:MM)" required/>
+
+                <label>Please provide an image URL for the dish: </label> <br/> 
+                <input type="text" class="textbox-wdith" id="image" name="image" placeholder="Image URL" />
+
+                <label>Please enter a description of the dish here.: </label> <br/>
+                <input type="text" id="bigBox" name="description" placeholder="Dish Description" required/>
+
+                <label>Please enter a list of the ingredients (separated by a comma) needed to complete this recipe here: </label> <br/>
+                <input type="text" id="bigBox" name="ingredients" placeholder="Ingredients" required/>
+
+                <label>Does this recipe contain gluten?: </label> <br/> 
+                <input type="radio" id="glutenY" name="glutenFree" />
+                <label for="glutenY" >Gluten</label>
+                <input type="radio" id="glutenY" name="glutenFree" />
+                <label for="glutenN" >No Gluten</label>
+
+                <label>Is this recipe vegan?: </label> <br/> 
+                <input type="radio" id="veganY" name="vegan" />
+                <label for="veganY" >Vegan</label>
+                <input type="radio" id="veganN" name="vegan" />
+                <label for="veganN" >Non Vegan</label>
+
+            </div> {{!--End inputsContainer div --}}
+            <div class="button">
+                <input type="button" id="btnAddRecipe" name="btnAddRecipe" value="Add Recipe" />
+            </div>
+
+        </form> {{!--End recipeForm --}}
+</div> {{!--End addRecipe div --}}

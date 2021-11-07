@@ -27,3 +27,8 @@ body{
     background: url(/assets/images/undraw_cooking_lyxy.png);
     /* ...snip... */
 }
+
+#bigBox{
+    height: 80px;
+    width:250px; 
+}
