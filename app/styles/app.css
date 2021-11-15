@@ -109,3 +109,14 @@ body{
     text-align: center;
     color: var(--primary-color);
 }
+
+.about-container p{
+    width: 40%;
+    position: relative ;
+    left: 18%;
+}
+
+.about-container h2{
+    position: relative;
+    left: 14%;
+}
