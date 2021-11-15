@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Space+Mono&display=swap');
 
+:root{
+    --shadow-box:
+    0px 0px 2.8px rgba(0, 0, 0, 0.063),
+    0px 0px 7.8px rgba(0, 0, 0, 0.09),
+    0px 0px 18.7px rgba(0, 0, 0, 0.117),
+    0px 0px 62px rgba(0, 0, 0, 0.18)
+  ;
+  --primary-color: rgb(117, 216, 104);
+  --white-color: hsl(0, 100%, 100%); 
+  --faded-black: rgb(103,105,101);
+  --component-raidus: 0.3125rem;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,8 +29,15 @@ body{
     justify-content: flex-end;
 }
 
+.navbar .navbar-brand {
+    border: 1px solid var(--primary-color);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.3125rem;
+}
+
 .navbar .nav-link:nth-child(3) {
-    background-color: rgb(117, 216, 104);
+    background-color: var(--primary-color);
     color: white;
     border-radius: 5px;
 }
@@ -26,4 +46,66 @@ body{
 .food {
     background: url(/assets/images/undraw_cooking_lyxy.png);
     /* ...snip... */
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    margin: 2rem auto 0 auto;
+    border: 1px solid var(--white-color);
+    border-radius: 0.625rem;
+    background-color: var(--white-color);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.form-container .hamburger {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container .hamburger img {
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container .form-group {
+    margin:1rem auto 1rem auto;
+}
+
+.form-container .form-group input[type=text] {
+    width: 25rem;
+    border-radius: 5px;
+    border: .5px solid var(--faded-black);
+}
+
+#input #ember164 {
+    height: 3rem;
+}
+
+#input #ember165 {
+    height: 4.5rem;
+}
+
+#input #ember166 {
+    height: 3rem;
+}
+
+#input #ember167 {
+    height: 6rem;
+}
+
+#input .btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.form-container .form-group input[type=text]::placeholder {
+    text-align: center;
+    color: var(--primary-color);
 }
