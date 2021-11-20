@@ -1,1 +1,24 @@
-<NavBar />
+<div class="form-container form">
+    <div>
+        <div class="hamburger">
+            <img src="/assets/images/undraw_Hamburger.png" alt="">
+        </div>
+        <form id='input'>
+            <div class="form-group">
+                {{input type="text" value=title placeholder="Type in a recipe name"}}
+            </div>
+            <div class="form-group">
+                {{input type="text" value=description placeholder="Description"}}
+            </div>
+            <div class="form-group">
+                {{input type="text" value=image placeholder="Image URL"}}
+            </div>
+            <div class="form-group">
+                {{input type="text" value=steps placeholder="Steps to take"}}
+            </div>
+            <button {{action 'addRecipe'}} class="btn">
+                Submit
+            </button>
+         </form>
+    </div>
+</div>

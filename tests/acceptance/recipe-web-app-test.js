@@ -12,6 +12,5 @@ module('Acceptance | recipe web app', function (hooks) {
     assert.dom('h2').hasText('Welcome to M&J Recipes!');
 
     assert.equal(currentURL(), '/about');
-
   });
 });
