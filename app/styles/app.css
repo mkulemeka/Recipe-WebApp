@@ -122,3 +122,14 @@ body{
     position: relative;
     left: 14%;
 }
+
+.contact-container p{
+    width: 40%;
+    position: relative ;
+    left: 18%;
+}
+
+.contact-container h2{
+    position: relative;
+    left: 14%;
+}

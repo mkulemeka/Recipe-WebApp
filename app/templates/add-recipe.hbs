@@ -16,7 +16,7 @@
             <div class="form-group">
                 {{input type="text" value=steps placeholder="Steps to take"}}
             </div>
-            <button {{action 'addRecipe'}} class="btn">
+            <button class="btn" type="submit" {{on= 'submit' this.addRecipe}}>
                 Submit
             </button>
          </form>
