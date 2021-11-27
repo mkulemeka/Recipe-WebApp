@@ -37,7 +37,7 @@ body{
     border-radius: var(--component-raidus-1);
 }
 
-.navbar .nav-link:nth-child(4) {
+.navbar .nav-link:nth-child(3) {
     background-color: var(--primary-color);
     color: white;
     border-radius: 5px;
@@ -103,6 +103,21 @@ body{
     background-color: var(--primary-color);
     color: var(--white-color);
     border-radius:var(--component-raidus-2);
+}
+
+.recipe_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    transition: 300ms ease-in-out;
+}
+
+.card:hover {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 1rem 3rem rgba(black, .175);
+    padding: .5rem;
 }
 
 .form-container .form-group input[type=text]::placeholder {

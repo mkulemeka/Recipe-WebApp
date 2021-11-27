@@ -5,9 +5,15 @@
     <p>We hope you will find any recipes that suit your fancy</p>
 </div>
 
-<div class= "recipeCard container-fluid">
-    <div id= "foodImage"></div>
-    <div id= "recipeTitle">Title: </div>
-    <div id= "coookTime">Cook Time: </div>
-    <ul class= "collapse" id="ingredients"></ul>
+<div class="recipe_cards">
+    {{#each @model as |recipe|}}
+        <div class="card shadow-sm mb-5 bg-body" style="width: 18rem;">
+            <img class="card-img-top" src={{recipe.image}} alt="{{recipe.title}}">
+            <div class="card-body">
+                <h5 class="card-title">{{recipe.title}}</h5>
+                <p class="card-text">{{recipe.description}}</p>
+                <a href={{recipe.link}}>Read More</a>
+            </div>
+        </div>
+    {{/each}}
 </div>
