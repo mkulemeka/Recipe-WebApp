@@ -4,6 +4,15 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'recipe-web-app',
     environment,
+    firebase: {
+      apiKey: 'AIzaSyDGKrGPQYBkRtxFjoaCoFVs5-WWMpLzaJI',
+      authDomain: 'recipe-emberjs.firebaseapp.com',
+      databaseURL: 'https://recipe-emberjs-default-rtdb.firebaseio.com',
+      projectId: 'recipe-emberjs',
+      storageBucket: 'recipe-emberjs.appspot.com',
+      appId: '1:989957178133:web:4c8e9dc459a61fa8af9f1c',
+      messagingSenderId: '00000000000',
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {

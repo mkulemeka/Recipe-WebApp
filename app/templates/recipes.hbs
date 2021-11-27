@@ -1,0 +1,17 @@
+{{page-title "Recipes"}}
+
+<h2>This page is for recipes</h2>
+
+{{outlet}}
+
+{{#each @model as |recipe|}}
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src={{@recipe.image}} alt="{{@recipe.title}}">
+        <div class="card-body">
+            <h5 class="card-title">{{recipe.title}}</h5>
+            <p class="card-text">{{recipe.description}}</p>
+            <p class="card-text">{{recipe.steps}}</p>
+            <p class="card-text">{{recipe.created}}</p>
+        </div>
+    </div>
+{{/each}}

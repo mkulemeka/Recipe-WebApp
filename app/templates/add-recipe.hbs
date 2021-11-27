@@ -5,20 +5,27 @@
         </div>
         <form id='input'>
             <div class="form-group">
-                {{input type="text" value=title placeholder="Type in a recipe name"}}
+                {{input class='form-control' type="text" value=title placeholder="Type in a recipe name"}}
             </div>
             <div class="form-group">
-                {{input type="text" value=description placeholder="Description"}}
+                {{textarea  class='form-control' value=description placeholder="Description"}}
             </div>
             <div class="form-group">
-                {{input type="text" value=image placeholder="Image URL"}}
+                {{input class='form-control' type="text" value=image placeholder="Image URL"}}
             </div>
             <div class="form-group">
-                {{input type="text" value=steps placeholder="Steps to take"}}
+                {{textarea class='form-control' value=steps placeholder="Steps to take"}}
             </div>
-            <button {{action 'addRecipe'}} class="btn">
+            <button class="btn" type="submit" {{action 'addRecipe'}}>
                 Submit
             </button>
          </form>
     </div>
 </div>
+
+{{!-- {{#each recipe in model}}
+    <div>
+        <h4>{{recipe.title}}</h4>
+        <p>{{recipe.description}}</p>
+    </div>
+//{{/each}} --}}

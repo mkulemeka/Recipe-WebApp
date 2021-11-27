@@ -37,7 +37,7 @@ body{
     border-radius: var(--component-raidus-1);
 }
 
-.navbar .nav-link:nth-child(3) {
+.navbar .nav-link:nth-child(4) {
     background-color: var(--primary-color);
     color: white;
     border-radius: 5px;
@@ -81,8 +81,6 @@ body{
 
 .form-container .form-group input[type=text] {
     width: 25rem;
-    border-radius: var(--component-raidus-2);
-    border: .5px solid var(--faded-black);
 }
 
 #input #ember164 {
